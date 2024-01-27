@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Online Shop</h1>
+    <div id="cart">
+        <span id="itemCount">0</span>
+        <button id="cartBtn">Cart</button>
+    </div>
+</header>
+
+<div id="products">
+    <div class="product" id="product1">
+        <img src="banner copy.jpg" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>$10</p>
+        <button class="addBtn" data-price="10">Add to Cart</button>
+    </div>
+    <div class="product" id="product2">
+        <img src="banner copy.jpg" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>$20</p>
+        <button class="addBtn" data-price="20">Add to Cart</button>
+    </div>
+</div>
+
+<div id="cartModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Cart</h2>
+        <ul id="cartItems">
+        </ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button id="checkoutBtn">Checkout</button>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const cartBtn = document.getElementById("cartBtn");
+    const cartModal = document.getElementById("cartModal");
+    const closeBtn = document.getElementsByClassName("close")[0];
+    const addBtns = document.getElementsByClassName("addBtn");
+    const checkoutBtn = document.getElementById("checkoutBtn");
+    const cartItems = document.getElementById("cartItems");
+    const totalDisplay = document.getElementById("total");
+    let cart = [];
+
+    // Open cart modal
+    cartBtn.onclick = function() {
+        cartModal.style.display = "block";
+        displayCart();
+    }
+
+    // Close cart modal
+    closeBtn.onclick = function() {
+        cartModal.style.display = "none";
+    }
+
+    // Close modal when clicked outside of it
+    window.onclick = function(event) {
+        if (event.target == cartModal) {
+            cartModal.style.display = "none";
+        }
+    }
+
+    // Add product to cart
+    for (let i = 0; i < addBtns.length; i++) {
+        addBtns[i].onclick = function() {
+            const price = parseFloat(this.getAttribute("data-price"));
+            cart.push(price);
+            displayCart();
+        }
+    }
+
+    // Display cart items
+    function displayCart() {
+        cartItems.innerHTML = "";
+        let total = 0;
+        for (let i = 0; i < cart.length; i++) {
+            const li = document.createElement("li");
+            li.textContent = "Item " + (i+1) + ": $" + cart[i];
+            cartItems.appendChild(li);
+            total += cart[i];
+        }
+        totalDisplay.textContent = total.toFixed(2);
+        document.getElementById("itemCount").textContent = cart.length;
+    }
+
+    // Checkout
+    checkoutBtn.onclick = function() {
+        console.log("Checkout button clicked");
+        const whatsappMessage = "Hi, I would like to purchase the following items: ";
+        for (let i = 0; i < cart.length; i++) {
+            whatsappMessage += "Item " + (i+1) + ": $" + cart[i] + ", ";
+        }
+        whatsappMessage += "Total: $" + totalDisplay.textContent;
+        const whatsappLink = "https://wa.me/27797529482/?text=" + encodeURIComponent(whatsappMessage);
+        window.open(whatsappLink, '_blank'); // Open in a new tab/window
+    }
+});
+
+</script>
+</body>
+</html>
