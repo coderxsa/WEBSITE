@@ -95,16 +95,32 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Checkout
-    checkoutBtn.onclick = function() {
-        console.log("Checkout button clicked");
-        const whatsappMessage = "Hi, I would like to purchase the following items: ";
-        for (let i = 0; i < cart.length; i++) {
-            whatsappMessage += "Item " + (i+1) + ": $" + cart[i] + ", ";
-        }
-        whatsappMessage += "Total: $" + totalDisplay.textContent;
-        const whatsappLink = "https://wa.me/27797529482/?text=" + encodeURIComponent(whatsappMessage);
-        window.open(whatsappLink, '_blank'); // Open in a new tab/window
+// Checkout
+checkoutBtn.onclick = function() {
+    console.log("Checkout button clicked");
+    const orderDetails = [];
+    for (let i = 0; i < cart.length; i++) {
+        orderDetails.push("Item " + (i+1) + ": $" + cart[i]);
     }
+    orderDetails.push("Total: $" + totalDisplay.textContent);
+    const textToCopy = orderDetails.join("\n");
+    
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+            alert("Order details copied to clipboard. Click the button to order on WhatsApp.");
+            const whatsappBtn = document.createElement("button");
+            whatsappBtn.textContent = "Click to order on WhatsApp";
+            whatsappBtn.onclick = function() {
+                const whatsappLink = "https://wa.me/27794653503/?text=" + encodeURIComponent(textToCopy);
+                window.open(whatsappLink, '_blank'); // Open in a new tab/window
+            };
+            document.body.appendChild(whatsappBtn);
+        })
+        .catch(err => {
+            console.error('Failed to copy: ', err);
+        });
+}
+
 });
 
 </script>
