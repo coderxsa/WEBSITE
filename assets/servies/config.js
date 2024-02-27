@@ -2,7 +2,7 @@ const config = {
     whatsappPhoneNumber: "2799999999",
     services: [
         {
-            name: "Instagram Followers ( 10k )",
+            name: "Instagram Followers ( 1.5k )",
             description: "Get real followers on Instagram.",
             price: "R10"
         },
