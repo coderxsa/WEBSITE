@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Service</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="./config.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Coderx Social</h1>
+        <p>Welcome to Coderx Social! Where you can boost your social media presence.</p>
+        <h4>When buying, must be 17+ or lower for adult supervision. Payment via Payment Link Yoco.</h4>
+        <img src="https://www.yoco.com/logos/yoco-logo-main.svg" alt="Yoco Banner" width="100">
+        <img src="https://cdn.visa.com/v2/assets/images/logos/visa/blue/logo.png" alt="Yoco Banner" width="100">
+        <img src="https://www.mastercard.co.za/content/dam/public/mastercardcom/mea/za/logos/mc-logo-52.svg" alt="Yoco Banner" width="60">
+    </header>
+
+    <div id="services" class="container"></div>
+
+    <footer>
+        <p>&copy; 2024 Coderx Social</p>
+    </footer>
+
+    <script>
+        // Function to load social media service blocks based on config
+        function loadServices() {
+            const servicesDiv = document.getElementById('services');
+            for (const service of config.services) {
+                const serviceBlock = document.createElement('div');
+                serviceBlock.classList.add('service');
+                serviceBlock.innerHTML = `
+                    <h2>${service.name}</h2>
+                    <p>Description: ${service.description}</p>
+                    <p>Price: ${service.price}</p>
+                    <button onclick="buyNow('${service.name}', '${service.price}')">Buy Now</button>
+                `;
+                servicesDiv.appendChild(serviceBlock);
+            }
+        }
+
+        // Function to open a WhatsApp link with purchase data and copy to clipboard
+        function buyNow(name, price) {
+            const purchaseData = `You are purchasing ${name} for ${price}`;
+            const whatsappLink = `https://wa.me/${config.whatsappPhoneNumber}/?text=${encodeURIComponent(purchaseData)}`;
+            navigator.clipboard.writeText(purchaseData)
+                .then(() => {
+                    window.open(whatsappLink);
+                    alert('Purchase data copied to clipboard!');
+                })
+                .catch(err => {
+                    console.error('Failed to copy: ', err);
+                    // If copying to clipboard fails, still proceed with opening WhatsApp link
+                    window.open(whatsappLink);
+                });
+        }
+
+        // Load services when the page is fully loaded
+        document.addEventListener('DOMContentLoaded', loadServices);
+    </script>
+</body>
+</html>
