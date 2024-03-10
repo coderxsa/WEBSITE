@@ -1,5 +1,5 @@
 const config = {
-    whatsappPhoneNumber: "855319762326",
+    whatsappPhoneNumber: "855317940396",
     services: [
         {
             name: "Instagram Likes ( 1.5k )",
