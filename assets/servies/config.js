@@ -3,7 +3,7 @@ const config = {
     services: [
         {
             name: "Free Trial ( limited amount )",
-            description: "Join Telegram Group https://t.me/coderxg\nOR\n\nJoin Instagram https://instagram.com/coderxsa\nSend me a message",
+            description: "Join Telegram Group https://t.me/coderxg<br>OR\n\nJoin Instagram https://instagram.com/coderxsa\nSend me a message",
             price: "R0"
         },
         {
