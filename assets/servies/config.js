@@ -2,6 +2,11 @@ const config = {
     whatsappPhoneNumber: "0",
     services: [
         {
+            name: "Free Trial ( limited amount )",
+            description: "Join Telegram Group https://t.me/coderxg\nOR\nJoin Instagram https://instagram.com/coderxsa\nSend me a message",
+            price: "R0"
+        },
+        {
             name: "Instagram Likes ( 1.5k )",
             description: "Get real Likes on Instagram.",
             price: "R15"
@@ -11,11 +16,7 @@ const config = {
             description: "Get real Likes on Instagram.",
             price: "R100"
         },
-        {
-            name: "Tiktok Views Free ( 3k )",
-            description: "Get free Tiktok Views With My Whatsaap Bot",
-            price: "R0"
-        },
+
         
     ]
 };
