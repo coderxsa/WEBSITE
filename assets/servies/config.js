@@ -3,7 +3,7 @@ const config = {
     services: [
         {
             name: "Free Trial ( limited amount )",
-            description: "Instagram https://instagram.com/coderxsa Send me a message",
+            description: "Send me a message",
             price: "R0"
         },
         {
