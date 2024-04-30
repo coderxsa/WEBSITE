@@ -20,7 +20,7 @@ const config = {
             name: "Instagram Followers ( 500 )",
             description: "Get Followers on Instagram. Low Drop.",
             price: "R20"
-        },
+        }
 
         
     ]
