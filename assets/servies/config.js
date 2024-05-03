@@ -48,6 +48,11 @@ const config = {
                     name: "TikTok Likes (1k)",
                     description: "Increase your TikTok likes.",
                     price: "R17"
+                },
+                {
+                    name: "TikTok Followers (500)",
+                    description: "Increase your TikTok Followers.",
+                    price: "R20"
                 }
             ]
         },
