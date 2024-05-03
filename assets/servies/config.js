@@ -8,10 +8,6 @@ const config = {
         {
             name: "TikTok",
             value: "TikTok"
-        },
-        {
-            name: "Twitter",
-            value: "Twitter"
         }
     ],
     services: [
@@ -39,14 +35,19 @@ const config = {
             platform: "TikTok",
             plans: [
                 {
-                    name: "TikTok Views ( Free )",
+                    name: "Tiktok Views[bot] 3k - Free limited",
                     description: "Boost your TikTok views. Order List",
                     price: "R0"
+                },
+                                {
+                    name: "Tiktok Views[bot] (100k)",
+                    description: "Boost your TikTok views. Order List",
+                    price: "R15"
                 },
                 {
                     name: "TikTok Likes (1k)",
                     description: "Increase your TikTok likes.",
-                    price: "R30"
+                    price: "R17"
                 }
             ]
         },
