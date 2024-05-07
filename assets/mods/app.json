@@ -1,0 +1,41 @@
+{
+    "apps": [
+      {
+        "name": "CODERX-[SOCIAL]",
+        "lastUpdated": "May 7, 2024",
+        "downloadLink": "",
+        "profilePicture": "pic/coderx-social.jpg"
+      },
+      {
+        "name": "CODERX-[Tempmail]",
+        "lastUpdated": "May 7, 2024",
+        "downloadLink": "",
+        "profilePicture": "pic/coderx_tempmail.jpg"
+      },
+      {
+        "name": "CODERX-[Downloader]",
+        "lastUpdated": "May 7, 2024",
+        "downloadLink": "",
+        "profilePicture": "pic/coderx_downloader.jpg"
+      },
+      {
+        "name": "CODERX-[nglspam]",
+        "lastUpdated": "May 7, 2024",
+        "downloadLink": "",
+        "profilePicture": "pic/coderx_nglspam.jpg"
+      },
+      {
+        "name": "CODERX-[vpn]",
+        "lastUpdated": "May 7, 2024",
+        "downloadLink": "",
+        "profilePicture": "pic/coderx_vpn.jpg"
+      },
+      {
+        "name": "CODERX-[SAVER]",
+        "lastUpdated": "May 7, 2024",
+        "downloadLink": "",
+        "profilePicture": "pic/coderx_saver.jpg"
+      }
+    ]
+  }
+  
