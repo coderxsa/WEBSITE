@@ -58,7 +58,9 @@ header h1 {
 header p {
     margin-top: 10px;
 }
-
+header a {
+    background-color: #ff00c8;
+}
 /* Footer styles */
 footer {
     background-color: #333;
