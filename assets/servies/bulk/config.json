@@ -1,5 +1,10 @@
 [
     {
+        "whatsapp_number": "27797529482"
+    },
+
+
+    {
         "name": "Instagram Followers",
         "quantity": 500,
         "price": 20
@@ -10,16 +15,24 @@
         "price": 15
     },
     {
-        "name": "TikTok Views",
+        "name": "Instagram Likes",
+        "quantity": 10000,
+        "price": 100
+    },
+    {
+        "name": "TikTok Views [bot]",
         "quantity": 100000,
         "price": 15
     },
     {
         "name": "TikTok Likes",
-        "quantity": 100,
-        "price": 12
+        "quantity": 1000,
+        "price": 40
     },
     {
-        "whatsapp_number": "27717311486"
+        "name": "TikTok Followers",
+        "quantity": 500,
+        "price": 20
     }
+
 ]
