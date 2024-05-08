@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Instagram Followers",
+        "quantity": 500,
+        "price": 20
+    },
+    {
+        "name": "Instagram Likes",
+        "quantity": 1500,
+        "price": 15
+    },
+    {
+        "name": "TikTok Views",
+        "quantity": 100000,
+        "price": 15
+    },
+    {
+        "name": "TikTok Likes",
+        "quantity": 100,
+        "price": 12
+    }
+]
