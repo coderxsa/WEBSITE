@@ -50,9 +50,44 @@ const config = {
                     price: "R17"
                 },
                 {
+                    name: "TikTok Likes (10k)",
+                    description: "Increase your TikTok likes.",
+                    price: "R100"
+                },
+                {
+                    name: "TikTok Shares (10k)",
+                    description: "Increase your TikTok Shares.",
+                    price: "R15"
+                },
+                {
+                    name: "TikTok Shares (100k)",
+                    description: "Increase your TikTok Shares.",
+                    price: "R22"
+                },
+                {
+                    name: "TikTok Saves (10k)",
+                    description: "Increase your TikTok Saves.",
+                    price: "R15"
+                },
+                {
+                    name: "TikTok Saves (100k)",
+                    description: "Increase your TikTok Saves.",
+                    price: "R22"
+                },
+                {
                     name: "TikTok Followers (500)",
                     description: "Increase your TikTok Followers.",
-                    price: "R20"
+                    price: "R24"
+                },
+                {
+                    name: "TikTok Followers (1000)",
+                    description: "Increase your TikTok Followers.",
+                    price: "R50"
+                },
+                {
+                    name: "TikTok Followers (4000)",
+                    description: "Increase your TikTok Followers.",
+                    price: "R200"
                 }
             ]
         },
