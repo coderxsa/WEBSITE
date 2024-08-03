@@ -40,7 +40,7 @@ button:hover {
 
 /* Body styles */
 body {
-    font-family: 'Comic Sans MS', 'Comic Sans', Arial, sans-serif; /* Playful font with sans-serif fallbacks */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff; /* Light background color */
