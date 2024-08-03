@@ -40,11 +40,12 @@ button:hover {
 
 /* Body styles */
 body {
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Playful font */
+    font-family: 'Comic Sans MS', 'Comic Sans', sans-serif; /* Playful font without cursive */
     margin: 0;
     padding: 0;
     background-color: #ffffff; /* Light background color */
 }
+
 
 /* Header styles */
 header {
