@@ -5,27 +5,27 @@
     {
         "name": "Instagram Followers",
         "quantity": 500,
-        "price": 20
+        "price": 22
     },
     {
         "name": "Instagram Likes",
         "quantity": 1500,
-        "price": 15
+        "price": 17
     },
     {
         "name": "TikTok Views [bot]",
         "quantity": 100000,
-        "price": 15
+        "price": 17
     },
     {
         "name": "TikTok Likes",
         "quantity": 1000,
-        "price": 17
+        "price": 19
     },
     {
         "name": "TikTok Followers",
         "quantity": 500,
-        "price": 24
+        "price": 26
     }
 
 ]
