@@ -16,18 +16,18 @@ const config = {
             plans: [
                 {
                     name: "Instagram Likes (1.5k)",
-                    description: "Get real Likes on Instagram.",
+                    description: "Offline",
                     price: "R17"
                 },
                 {
                     name: "Instagram Likes (10k)",
-                    description: "Get real Likes on Instagram.",
+                    description: "Ofline",
                     price: "R110"
                 },
                 {
-                    name: "Instagram Followers (500)",
+                    name: "Instagram Followers (100)",
                     description: "Get Followers on Instagram. Low Drop.",
-                    price: "R22"
+                    price: "R65"
                 }
             ]
         },
@@ -47,12 +47,12 @@ const config = {
                 {
                     name: "TikTok Likes (1k)",
                     description: "Increase your TikTok likes.",
-                    price: "R19"
+                    price: "R20"
                 },
                 {
                     name: "TikTok Likes (10k)",
                     description: "Increase your TikTok likes.",
-                    price: "R110"
+                    price: "R120"
                 },
                 {
                     name: "TikTok Shares (10k)",
@@ -75,9 +75,9 @@ const config = {
                     price: "R24"
                 },
                 {
-                    name: "TikTok Followers (500)",
+                    name: "TikTok Followers (1000)",
                     description: "Increase your TikTok Followers.",
-                    price: "R26"
+                    price: "R30"
                 },
                 {
                     name: "TikTok Followers (1000)",
